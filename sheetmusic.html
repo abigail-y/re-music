@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Robert Elkjer">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sheet Music | Elkjer Music</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+    background-color: #ceffe0;
+    color: #0c1d12;
+    font-family: "Inter", sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+
+header {
+    padding: 2rem 1rem 1rem;
+}
+
+header h1 {
+    font-size: 2.4rem;
+    color: #204e32;
+    margin-bottom: 0.3rem;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.15);
+}
+
+header p {
+    font-size: 1rem;
+}
+
+.notice {
+    margin-top: 0.8rem;
+    padding: 0.6rem 1rem;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    background: #204e32;
+    color: #ceffe0;
+    border-radius: 6px;
+    font-weight: 600;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+
+main {
+    width: 95%;
+    max-width: 1200px;
+    margin: auto;
+    padding-bottom: 2rem;
+}
+
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 1fr;
+    gap: 1.2rem;
+    margin-top: 1.5rem;
+}
+
+.grid section {
+    background: #fff;
+    border: 1px solid #3a8e5a;
+    border-radius: 10px;
+    padding: 1.2rem;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+}
+
+section h2 {
+    color: #204e32;
+    margin-bottom: 1rem;
+}
+
+section h3 {
+    color: #204e32;
+    font-size: 1rem;
+    margin: 1rem 0 0.5rem;
+}
+
+.grid section a {
+    color: #2d6d45;
+    text-decoration: none;
+    font-weight: 500;
+    display: block;
+    margin: 0.35rem 0;
+}
+
+.grid section a:hover {
+    text-decoration: underline;
+    background: #2d6d45;
+    color: #ceffe0;
+}
+
+a:focus {
+    outline: 3px solid #07120b;
+    outline-offset: 2px;
+}
+
+
+section img {
+    margin-top: 0.5rem;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+
+nav {
+    width: 100%;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    gap: 0.6rem;
+    flex-wrap: wrap;
+    font-size: 0.9rem;
+}
+
+.nav-links a {
+    color: #204e32;
+    font-weight: 600;
+}
+
+.nav-links span {
+    color: #0c1d12;
+}
+
+
+@media (max-width: 900px) {
+    .grid { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 600px) {
+    .grid { grid-template-columns: 1fr; }
+}
+
+
+.nav-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 14px;
+    font-size: 0.95rem;
+    color: #ceffe0;
+    background-color: #204e32;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+a:hover .nav-button,
+a:focus .nav-button {
+    background-color: #0c1d12;
+    transform: scale(1.03);
+}
+
+footer {
+    padding-top: 1.2rem;
+    border-top: 2px solid #3a8e5a;
+    margin-top: 3rem;
+}
+
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Sheet Music</h1>
+    <p>Elkjer Music Publishing<br>
+       144 Bryce Canyon Road, San Rafael, CA 94903
+    </p>
+
+    <p class="notice">REFRESH CATALOG PAGES OR YOU WON'T SEE ALL THE NEW MUSIC!</p>
+</header>
+
+<main>
+
+    <div class="grid">
+
+      
+        <section aria-label="Customer info">
+            <p><strong>Canadian customers:</strong><br>
+               If PayPal overcharges shipping, a refund will be sent promptly.</p>
+
+            <div class="nav-item">
+                <a href="http://robertelkjer.net/OurCustomerSpeak1.html">
+                    <img src="customer-review-icon-quality-rating-feedback-01-vector.jpg"
+                         alt=""
+                         width="90">
+                    <span class="nav-button">Customer Reviews</span>
+                </a>
+            </div>
+        </section>
+
+       
+        <section aria-label="Brass sheet music">
+            <h2>Brass</h2>
+
+            <a href="http://robertelkjer.net/TrbnDuetPage5.html">Trombone Duet / Transcriptions</a>
+            <a href="http://robertelkjer.net/TrbnTrioPage1.html">Trombone Trio</a>
+            <a href="http://robertelkjer.net/TrbnQuartetPage12.html">Trombone Quartet</a>
+            <a href="trombonesolos.html">Trombone Solos</a>
+            <a href="http://robertelkjer.net/TrbnChoir1.html">Trombone Choir</a>
+
+            <a href="http://robertelkjer.net/TubaQuartetPage1.html">Tuba Quartet / Trio</a>
+            <a href="http://robertelkjer.net/DuetClips/TubaDuetPage1.html">Tuba Duets & Solos</a>
+
+            <a href="http://robertelkjer.net/BrassQuintetPage1.html">Brass Quintet</a>
+            <a href="http://robertelkjer.net/BrassQuartetPage1.html">Brass Quartet</a>
+            <a href="http://robertelkjer.net/BrassTrioPage1.html">Brass Trio</a>
+            <a href="http://robertelkjer.net/BrassChoirPage1.html">Brass Choir</a>
+
+            <a href="http://robertelkjer.net/TrumpetPage1.html">Trumpet</a>
+        </section>
+
+        <section aria-label="Woodwind and other sheet music">
+            <h2>Woodwind</h2>
+
+            <a href="http://robertelkjer.net/DuetClips/FlutePage1.html">Flute</a>
+            <a href="http://robertelkjer.net/DuetClips/ClarinetPage1.html">Clarinet</a>
+            <a href="http://robertelkjer.net/DuetClips/OboeEnglishHornPage1.html">Oboe / English Horn</a>
+            <a href="http://robertelkjer.net/DuetClips/BassoonPage1.html">Bassoon</a>
+            <a href="http://robertelkjer.net/SaxPage1.html">Saxophone</a>
+            <a href="http://robertelkjer.net/WWQuintetPage1.html">Woodwind Quintet</a>
+
+            <h3>Other</h3>
+            <a href="http://robertelkjer.net/DuetClips/ViolinPage1.html">Violin / Cello</a>
+            <a href="http://robertelkjer.net/StringQuartetPage.html">String Quartet</a>
+            <a href="http://robertelkjer.net/SoloPianoPage.html">Solo Piano</a>
+
+            <h3>Method Books</h3>
+            <a href="http://robertelkjer.net/MethodBooksPage1.html">Jazz Fragments</a>
+        </section>
+
+      
+        <section aria-label="New free transcriptions">
+            <p style="color:#b42424; font-weight:700; margin-bottom:0.7rem;">New!</p>
+
+            <div class="nav-image-links">
+
+                <div class="nav-item">
+                    <a href="http://robertelkjer.net/FreeWycliffeGordonPage1.html">
+                        <img src="Wycliffe-gordon.jpg" alt="" width="90">
+                        <span class="nav-button">Wycliffe Gordon Transcriptions</span>
+                    </a>
+                </div>
+
+                <div class="nav-item">
+                    <a href="http://robertelkjer.net/FreeJJTransPage1.html">
+                        <img src="jjjohnson.jpg" alt="" width="90">
+                        <span class="nav-button">JJ Johnson Transcriptions</span>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+    </div>
+
+
+</main>
+
+<footer>
+    <nav aria-label="Site navigation">
+        <div class="nav-links">
+            <a href="homepage.html">home</a><span>|</span>
+            <a href="http://robertelkjer.net/CDCatalogPage1.html">recordings</a><span>|</span>
+            <a href="http://robertelkjer.net/SheetMusicMainPage8.html">sheet music</a><span>|</span>
+            <a href="http://robertelkjer.net/CLMusicLicensing4.html">licensing</a><span>|</span>
+            <a href="http://robertelkjer.net/ElkjerBio9.html">bio</a><span>|</span>
+            <a href="http://robertelkjer.net/WhistlePage4.html">whistling</a><span>|</span>
+            <a href="http://whatsupwithbob.blogspot.com/">blog</a><span>|</span>
+            <a href="mailto:relkjer@att.net">contact</a>
+        </div>
+    </nav>
+</footer>
+
+</body>
+</html>

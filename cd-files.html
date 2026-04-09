@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Robert Elkjer">
+  <title>Elkjer Music CD Catalog</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #ceffe0;
+      color: #0c1d12;
+      font-family: "Inter", sans-serif;
+      text-align: center;
+    }
+
+    header {
+      padding: 2rem 1rem 1rem;
+    }
+
+    header h1 {
+      font-size: 2.2rem;
+      color: #204e32;
+      margin: 0;
+    }
+
+    main {
+      width: 95%;
+      max-width: 900px;
+      margin: 0 auto;
+      padding-bottom: 2rem;
+    }
+
+    /* CD catalog table */
+    .cd-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1.5rem;
+      background-color: #ffffff;
+      border: 1px solid #3a8e5a;
+    }
+
+    .cd-table td {
+      padding: 20px;
+      vertical-align: top;
+      border: 1px solid #3a8e5a;
+      width: 50%;
+    }
+
+    .cd-table img {
+      display: block;
+      width: 170px;
+      height: auto;
+      border: none;
+    }
+
+    .cd-table .cd-info {
+      margin-top: 10px;
+      font-weight: 600;
+      color: #204e32;
+      font-size: 1rem;
+    }
+
+    .cd-table .cd-genre {
+      color: #2d6d45;
+      font-weight: 400;
+      font-size: 0.9rem;
+    }
+
+    .cd-table a {
+      color: #2d6d45;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .cd-table a:hover {
+      text-decoration: underline;
+    }
+
+    a:focus {
+      outline: 3px solid #07120b;
+      outline-offset: 2px;
+    }
+
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0,0,0,0);
+      white-space: nowrap;
+      border: 0;
+    }
+
+    hr {
+      border: none;
+      border-top: 2px solid #3a8e5a;
+      margin: 2rem auto;
+      width: 96%;
+    }
+
+    /* Footer nav */
+    footer {
+      padding: 1.5rem 0 2rem;
+      font-size: 0.95rem;
+      color: #0c1d12;
+      border-top: 2px solid #3a8e5a;
+      margin-top: 2rem;
+    }
+
+    footer nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 0.4rem 0.8rem;
+    }
+
+    footer nav a {
+      color: #204e32;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    footer nav a:hover {
+      text-decoration: underline;
+    }
+
+    footer nav span {
+      color: #0c1d12;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>CDs from Elkjer Music</h1>
+  </header>
+
+  <main>
+    <table class="cd-table">
+      <caption class="sr-only">CD catalog — click a cover or title to learn more, or use the sample links to preview audio</caption>
+      <tbody>
+        <tr>
+          <td>
+            <a href="https://robertelkjer.net/WhenClips/WhenYouSaidHelloPage2.html">
+              <img src="TestCover2dForCatalogPage.jpg" alt="&quot;When You Said Hello&quot; album cover — urban jazz">
+            </a>
+            <p class="cd-info">"When You Said Hello"</p>
+            <p class="cd-genre">(urban jazz)</p>
+            <a href="http://robertelkjer.net/WhenClips/WY%20When%20You%20Said%20Hello%20Clip.mp3">sample</a>
+          </td>
+          <td>
+            <a href="https://robertelkjer.net/CL128.html">
+              <img src="CleanLinescover4f300forcatalog.jpg" alt="&quot;Clean Lines&quot; album cover — contemplative jazz">
+            </a>
+            <p class="cd-info">"Clean Lines"</p>
+            <p class="cd-genre">(contemplative jazz)</p>
+            <a href="http://robertelkjer.net/CL%20Train%20Of%20Thought%20Clip.mp3">sample</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://robertelkjer.net/HolidayBrassPage.html">
+              <img src="BBAltCover5bforCatalog.jpg" alt="&quot;Holiday Brass&quot; album cover">
+            </a>
+            <p class="cd-info">"Holiday Brass"</p>
+            <a href="http://robertelkjer.net/HB%20Adeste%20Fidelis%20Clip.mp3">sample</a>
+          </td>
+          <td>
+            <a href="https://robertelkjer.net/DeeClips/TromboneOrnamentsPage.html">
+              <img src="MDSCOV2ForCatalog.jpg" alt="&quot;Trombone Ornaments&quot; album cover">
+            </a>
+            <p class="cd-info">"Trombone Ornaments"</p>
+            <a href="http://robertelkjer.net/DeeClips/2TBGodRestYe.mp3">sample</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://robertelkjer.net/Hush3.html">
+              <img src="PianoCDCover14%20copyThumb1.jpg" alt="&quot;Hush&quot; album cover — solo piano">
+            </a>
+            <p class="cd-info">"Hush"</p>
+            <a href="http://robertelkjer.net/PianoCD/Bridge%20Over%20Troubled%20Waters---clip.mp3">sample</a>
+          </td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
+
+  <hr>
+
+  <footer>
+    <nav aria-label="Site navigation">
+      <a href="homepage.html">home</a><span>|</span>
+      <a href="http://robertelkjer.net/CDCatalogPage1.html">recordings</a><span>|</span>
+      <a href="sheetmusic.html">sheet music</a><span>|</span>
+      <a href="http://robertelkjer.net/CLMusicLicensing4.html">licensing</a><span>|</span>
+      <a href="Ebio.html">bio</a><span>|</span>
+      <a href="whistling.html">whistling</a><span>|</span>
+      <a href="http://whatsupwithbob.blogspot.com/">blog</a><span>|</span>
+      <a href="mailto:relkjer@att.net">contact</a>
+    </nav>
+  </footer>
+
+</body>
+</html>

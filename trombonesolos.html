@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Robert Elkjer">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add to Cart – Trombone & Piano | Elkjer Music</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: "Inter", sans-serif;
+      background-color: #ceffe0;
+      color: #0c1d12;
+      line-height: 1.6;
+    }
+
+    header {
+      text-align: center;
+      padding: 1.5rem 1rem;
+    }
+    header h1 {
+      font-size: 2.2rem;
+      color: #204e32;
+      margin: 0.3rem 0;
+    }
+    header p.subtitle {
+      font-size: 0.9rem;
+      color: #0c1d12;
+      margin: 0.2rem 0;
+    }
+    header p.notice {
+      margin-top: 0.8rem;
+      padding: 0.6rem 1rem;
+      background-color: #204e32;
+      color: #ceffe0;
+      display: inline-block;
+      border-radius: 6px;
+      font-weight: 600;
+    }
+
+    main {
+      width: 95%;
+      max-width: 1200px;
+      margin: auto;
+      padding-bottom: 2rem;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1.5rem;
+      background-color: #fff;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+
+    thead {
+      background-color: #204e32;
+    }
+    thead th {
+      padding: 12px 10px;
+      color: #ceffe0;
+      text-align: left;
+      font-weight: 600;
+      font-size: 1rem;
+    }
+    tbody tr:nth-child(even) {
+      background-color: #f9f8f8;
+    }
+    td {
+      padding: 12px 10px;
+      vertical-align: top;
+      border-bottom: 1px solid #e0e0e0;
+    }
+
+    .item-title {
+      font-size: 1.15rem;
+      font-weight: 600;
+      color: #204e32;
+      margin-bottom: 0.5rem;
+    }
+    .demo-links a {
+      color: #2d6d45;
+      text-decoration: none;
+      margin-right: 0.5rem;
+    }
+    .demo-links a:hover {
+      text-decoration: underline;
+    }
+    a:focus {
+      outline: 3px solid #07120b;
+      outline-offset: 2px;
+    }
+
+    .catnum, .level-price {
+      text-align: center;
+      font-weight: 500;
+    }
+
+    .order-button img {
+      width: 120px;
+      height: auto;
+      border: none;
+    }
+
+    .new-label {
+      color: #3a8e5a;
+      font-style: italic;
+      margin-right: 6px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem 0;
+      font-size: 0.9rem;
+      color: #0c1d12;
+    }
+    footer a {
+      color: #2d6d45;
+      text-decoration: none;
+      margin: 0 6px;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      table, thead, tbody, th, td, tr {
+        display: block;
+      }
+      thead {
+        display: none;
+      }
+      tr {
+        margin-bottom: 1rem;
+      }
+      td {
+        border: none;
+        padding: 8px 5px;
+      }
+      td:before {
+        content: attr(data-label);
+        font-weight: bold;
+        display: block;
+        margin-bottom: 4px;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Trombone & Piano Sheet Music</h1>
+    <p class="subtitle">***Please allow 10 days for delivery***</p>
+    <p class="notice">REFRESH THIS PAGE OR YOU WON'T SEE ALL THE NEW MUSIC!!</p>
+  </header>
+
+  <main>
+    <table>
+      <caption>Trombone &amp; Piano Sheet Music — available titles</caption>
+      <thead>
+        <tr>
+          <th>Title / Description</th>
+          <th>Cat. #</th>
+          <th>Level / Price</th>
+          <th>Order</th>
+        </tr>
+      </thead>
+      <tbody>
+
+        <tr>
+          <td data-label="Title / Description">
+            <span class="new-label">new!</span>
+            <div class="item-title">*** A Christmas Suite, for trombone and piano ***</div>
+            <p>With all the 4‑tets I've arranged, I realized I'd never actually arranged a straightforward suite of carols for solo trombone and piano. Sheet music includes trombone part and piano accompaniment.</p>
+            <div class="demo-links">
+              <a href="https://robertelkjer.net/AChristmasSuite--BoneAndPiano.mp3">Trombone & Piano Demo</a>
+              <a href="https://robertelkjer.net/BoneXmasSuitePianoOnly.mp3">Piano-Only Demo</a>
+            </div>
+          </td>
+          <td data-label="Cat. #">TBN13</td>
+          <td data-label="Level / Price" class="level-price">med / adv — $17</td>
+          <td data-label="Order" class="order-button">
+            <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+              <input type="hidden" name="cmd" value="_cart">
+              <input type="hidden" name="business" value="relkjer@att.net">
+              <input type="hidden" name="item_name" value="A Christmas Suite, for solo trombone and piano">
+              <input type="hidden" name="item_number" value="TBN13">
+              <input type="hidden" name="amount" value="17.00">
+              <input type="image" src="https://robertelkjer.net/orderbutton2.jpg" alt="Pay with PayPal">
+              <input type="hidden" name="add" value="1">
+            </form>
+          </td>
+        </tr>
+
+    
+        <tr>
+          <td data-label="Title / Description">
+            <span class="new-label">new!</span>
+            <div class="item-title">Easy & Fun “Play‑Like‑a‑Jazz‑Guy” Series — Five Jazz Standards</div>
+            <p>For solo bone and pre‑recorded piano. Designed for you to play along — no improvisation required. Great for piano‑only backing playback with headphones.</p>
+            <div class="demo-links">
+              <a href="https://robertelkjer.net/ItHadToBeYouBonePianoDemo.mp3">It Had To Be You – Demo</a>
+              <a href="https://robertelkjer.net/ItHadToBeYouPianoOnly.mp3">Piano Only</a>
+              <a href="https://robertelkjer.net/ItHadToBeYouPianoAndHihat.mp3">Piano + Hihat</a>
+            </div>
+          </td>
+          <td data-label="Cat. #">TBN09</td>
+          <td data-label="Level / Price" class="level-price">med / adv — $12</td>
+          <td data-label="Order" class="order-button">
+            <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+              <input type="hidden" name="cmd" value="_cart">
+              <input type="hidden" name="business" value="relkjer@att.net">
+              <input type="hidden" name="item_name" value="Five Jazz Standards for Solo Bone V1">
+              <input type="hidden" name="item_number" value="TBN09">
+              <input type="hidden" name="amount" value="12.00">
+              <input type="image" src="https://robertelkjer.net/orderbutton2.jpg" alt="Pay with PayPal">
+              <input type="hidden" name="add" value="1">
+            </form>
+          </td>
+        </tr>
+
+      
+        <tr>
+          <td data-label="Title / Description">
+            <div class="item-title">9. Ravel String Quartet — Pizzicato Movement (arranged for trombone & piano)</div>
+            <p>An unusual arrangement, but the pizzicato movement sounds very interesting on trombone. Includes play-along piano part and click‑track option.</p>
+            <div class="demo-links">
+              <a href="https://www.youtube.com/watch?v=ZLyedwmKttw">YouTube Demo (performance)</a><br>
+              <a href="http://robertelkjer.net/RavelStringQuartet2ndMvmtPianoPart.mp3">Piano‑Only Part</a><br>
+              <a href="http://robertelkjer.net/RavelStringQuartetPianoPartWITHCLICK.mp3">Piano + Click‑Track</a>
+            </div>
+          </td>
+          <td data-label="Cat. #">TBN08</td>
+          <td data-label="Level / Price" class="level-price">adv — $15</td>
+          <td data-label="Order" class="order-button">
+            <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+              <input type="hidden" name="cmd" value="_cart">
+              <input type="hidden" name="business" value="relkjer@att.net">
+              <input type="hidden" name="item_name" value="Ravel String Quartet (Pizzicato Mvmt) Trombone-Piano">
+              <input type="hidden" name="item_number" value="TBN08">
+              <input type="hidden" name="amount" value="15.00">
+              <input type="image" src="https://robertelkjer.net/orderbutton2.jpg" alt="Pay with PayPal">
+              <input type="hidden" name="add" value="1">
+            </form>
+          </td>
+        </tr>
+
+    
+        <tr>
+          <td data-label="Title / Description">
+            <div class="item-title">8. Ravel Pavane (Trombone & Piano)</div>
+            <p>Arranged in a light, Latin‑flavored (bossa nova) style. Combines Ravel’s impressionistic feel with modern, subtle groove.</p>
+            <div class="demo-links">
+              <a href="http://robertelkjer.net/RavelTrbnPiano.mp3">Full Demo</a> |
+              <a href="http://robertelkjer.net/RavelPavanePianoPartOnly.mp3">Piano‑Only Part</a>
+            </div>
+          </td>
+          <td data-label="Cat. #">TBN07</td>
+          <td data-label="Level / Price" class="level-price">adv — $15</td>
+          <td data-label="Order" class="order-button">
+            <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+              <input type="hidden" name="cmd" value="_cart">
+              <input type="hidden" name="business" value="relkjer@att.net">
+              <input type="hidden" name="item_name" value="Ravel Pavane Trombone-Piano">
+              <input type="hidden" name="item_number" value="TBN07">
+              <input type="hidden" name="amount" value="15.00">
+              <input type="image" src="https://robertelkjer.net/orderbutton2.jpg" alt="Pay with PayPal">
+              <input type="hidden" name="add" value="1">
+            </form>
+          </td>
+        </tr>
+
+ 
+        <tr>
+          <td data-label="Title / Description">
+            <div class="item-title">7. Fauré “Sicilienne” (in a smooth jazz style)</div>
+            <p>This lyrical melody works nicely as a jazz waltz — mellow, elegant, expressive. Includes piano backing track for play‑along and a YouTube performance demo.</p>
+            <div class="demo-links">
+              <a href="http://robertelkjer.net/FAURETBN.mp3">Audio Demo</a> |
+              <a href="https://www.youtube.com/watch?v=Ma3wOK7GsDY&feature=youtu.be">YouTube Performance</a>
+            </div>
+          </td>
+          <td data-label="Cat. #">TBN08</td>
+          <td data-label="Level / Price" class="level-price">adv — $15</td>
+          <td data-label="Order" class="order-button">
+            <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+              <input type="hidden" name="cmd" value="_cart">
+              <input type="hidden" name="business" value="relkjer@att.net">
+              <input type="hidden" name="item_name" value="Faure Sicilienne Trombone-Piano">
+              <input type="hidden" name="item_number" value="TBN08">
+              <input type="hidden" name="amount" value="15.00">
+              <input type="image" src="https://robertelkjer.net/orderbutton2.jpg" alt="Pay with PayPal">
+              <input type="hidden" name="add" value="1">
+            </form>
+          </td>
+        </tr>
+
+    
+        <tr>
+          <td data-label="Title / Description">
+            <div class="item-title">6. “Kitten On the Keys” (arr. for trombone & piano)</div>
+            <p>A light, playful encore piece inspired by Joe Alessi’s suggestion — fun, virtuosic, and entertaining.</p>
+            <div class="demo-links">
+              <a href="http://www.youtube.com/watch?v=UL_oCI0cW_o">YouTube Demo</a>
+            </div>
+          </td>
+          <td data-label="Cat. #">TBN06</td>
+          <td data-label="Level / Price" class="level-price">adv — $15</td>
+          <td data-label="Order" class="order-button">
+            <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+              <input type="hidden" name="cmd" value="_cart">
+              <input type="hidden" name="business" value="relkjer@att.net">
+              <input type="hidden" name="item_name" value="Kitten On the Keys Trombone-Piano">
+              <input type="hidden" name="item_number" value="TBN06">
+              <input type="hidden" name="amount" value="15.00">
+              <input type="image" src="https://robertelkjer.net/orderbutton2.jpg" alt="Pay with PayPal">
+              <input type="hidden" name="add" value="1">
+            </form>
+          </td>
+        </tr>
+
+        <tr>
+          <td data-label="Title / Description">
+            <div class="item-title">5. Vivaldi Piccolo Concerto, 2nd Movement (Trombone & Piano)</div>
+            <p>A sensitive, moving arrangement of Vivaldi’s piece — including piano-accompaniment and demo.</p>
+            <div class="demo-links">
+              <a href="http://robertelkjer.net/VIVTBPNO.mp3">Audio Demo</a> |
+              <a href="http://robertelkjer.net/VivaldiLargoAlessiClip.mp3">Alessi Performance Clip</a>
+            </div>
+          </td>
+          <td data-label="Cat. #">TBN05</td>
+          <td data-label="Level / Price" class="level-price">adv — $15</td>
+          <td data-label="Order" class="order-button">
+            <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+              <input type="hidden" name="cmd" value="_cart">
+              <input type="hidden" name="business" value="relkjer@att.net">
+              <input type="hidden" name="item_name" value="Vivaldi Piccolo Concerto 2nd Mvmt Trombone-Piano">
+              <input type="hidden" name="item_number" value="TBN05">
+              <input type="hidden" name="amount" value="15.00">
+              <input type="image" src="https://robertelkjer.net/orderbutton2.jpg" alt="Pay with PayPal">
+              <input type="hidden" name="add" value="1">
+            </form>
+          </td>
+        </tr>
+
+ 
+        <tr>
+          <td data-label="Title / Description">
+            <div class="item-title">1. Mozart Rondo Alla Turka (Trombone & Piano)</div>
+            <p>A virtuosic and exciting arrangement — ideal for encore or recital. Includes demo and a YouTube clip of a performance.</p>
+            <div class="demo-links">
+              <a href="http://robertelkjer.net/RondoAllaTurkaClip.mp3">Audio Demo</a> |
+              <a href="https://www.youtube.com/watch?v=LsnIJAxepzc">YouTube Performance (jump to 1:02)</a>
+            </div>
+          </td>
+          <td data-label="Cat. #">TBN01</td>
+          <td data-label="Level / Price" class="level-price">adv — $15</td>
+          <td data-label="Order" class="order-button">
+            <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+              <input type="hidden" name="cmd" value="_cart">
+              <input type="hidden" name="business" value="relkjer@att.net">
+              <input type="hidden" name="item_name" value="Mozart Rondo Alla Turka Trombone-Piano">
+              <input type="hidden" name="item_number" value="TBN01">
+              <input type="hidden" name="amount" value="15.00">
+              <input type="image" src="https://robertelkjer.net/orderbutton2.jpg" alt="Pay with PayPal">
+              <input type="hidden" name="add" value="1">
+            </form>
+          </td>
+        </tr>
+
+   
+        <tr>
+          <td data-label="Title / Description">
+            <div class="item-title">2. Chopin “Minute Waltz” (Trombone & Piano)</div>
+            <p>Fun arrangement for trombone and piano — great for recital or practice. Demo and additional info link available.</p>
+            <div class="demo-links">
+              <a href="http://robertelkjer.net/MinuteWaltzMoreInfo.html">More Info</a> |
+              <a href="http://robertelkjer.net/MinuteWaltzClip.mp3">Audio Clip</a> |
+              <a href="http://www.youtube.com/watch?v=WMvVpK_Ew7A">YouTube – Joe Alessi Performance</a>
+            </div>
+          </td>
+          <td data-label="Cat. #">TBN02</td>
+          <td data-label="Level / Price" class="level-price">adv — $15</td>
+          <td data-label="Order" class="order-button">
+            <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+              <input type="hidden" name="cmd" value="_cart">
+              <input type="hidden" name="business" value="relkjer@att.net">
+              <input type="hidden" name="item_name" value="Chopin Minute Waltz Trombone-Piano">
+              <input type="hidden" name="item_number" value="TBN02">
+              <input type="hidden" name="amount" value="15.00">
+              <input type="image" src="https://robertelkjer.net/orderbutton2.jpg" alt="Pay with PayPal">
+              <input type="hidden" name="add" value="1">
+            </form>
+          </td>
+        </tr>
+
+
+        <tr>
+          <td data-label="Title / Description">
+            <div class="item-title">3. Debussy “Clair de Lune” (Trombone & Piano)</div>
+            <p>Classic piano piece arranged for trombone and piano — beautiful, lyrical, ideal for recital.</p>
+            <div class="demo-links">
+              <a href="http://robertelkjer.net/ClairDeLuneTrbnPno.mp3">Audio Demo</a>
+            </div>
+          </td>
+          <td data-label="Cat. #">TBN03</td>
+          <td data-label="Level / Price" class="level-price">med / adv — $15</td>
+          <td data-label="Order" class="order-button">
+            <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+              <input type="hidden" name="cmd" value="_cart">
+              <input type="hidden" name="business" value="relkjer@att.net">
+              <input type="hidden" name="item_name" value="Debussy Clair de Lune Trombone-Piano">
+              <input type="hidden" name="item_number" value="TBN03">
+              <input type="hidden" name="amount" value="15.00">
+              <input type="image" src="https://robertelkjer.net/orderbutton2.jpg" alt="Pay with PayPal">
+              <input type="hidden" name="add" value="1">
+            </form>
+          </td>
+        </tr>
+
+      </tbody>
+    </table>
+  </main>
+
+  <footer>
+    <nav aria-label="Site navigation">
+      <a href="homepage.html">Home</a> |
+      <a href="http://robertelkjer.net/CDCatalogPage1.html">Recordings</a> |
+      <a href="sheetmusic.html">Sheet Music</a> |
+      <a href="http://robertelkjer.net/CLMusicLicensing4.html">Licensing</a> |
+      <a href="http://robertelkjer.net/ElkjerBio9.html">Bio</a> |
+      <a href="http://robertelkjer.net/WhistlePage4.html">Whistling</a> |
+      <a href="http://whatsupwithbob.blogspot.com/">Blog</a> |
+      <a href="mailto:relkjer@att.net">Contact</a>
+    </nav>
+  </footer>
+
+</body>
+</html>

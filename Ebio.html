@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Robert Elkjer">
+  <title>Bio | Elkjer Music</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #ceffe0;
+      color: #0c1d12;
+      font-family: "Inter", sans-serif;
+      line-height: 1.6;
+      text-align: center;
+    }
+
+    header {
+      padding: 2rem 1rem 1rem;
+    }
+
+    header h1 {
+      font-size: 2.4rem;
+      color: #204e32;
+      margin: 0 0 0.3rem;
+    }
+
+    header p {
+      font-size: 0.95rem;
+      color: #2d6d45;
+      margin: 0.2rem 0;
+    }
+
+    main {
+      width: 95%;
+      max-width: 900px;
+      margin: 0 auto;
+      padding-bottom: 2rem;
+      text-align: left;
+    }
+
+    .bio-intro {
+      background: #fff;
+      border: 1px solid #3a8e5a;
+      border-radius: 10px;
+      padding: 1.4rem 1.8rem;
+      margin: 1.5rem 0;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+      font-size: 1rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.2rem;
+      margin-top: 1.2rem;
+    }
+
+    .grid section {
+      background: #fff;
+      border: 1px solid #3a8e5a;
+      border-radius: 10px;
+      padding: 1.2rem 1.4rem;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+    }
+
+    .grid section h2 {
+      color: #204e32;
+      font-size: 1.1rem;
+      margin: 0 0 0.7rem;
+      border-bottom: 1px solid #3a8e5a;
+      padding-bottom: 0.4rem;
+    }
+
+    .grid section ul {
+      margin: 0;
+      padding: 0 0 0 1.2rem;
+    }
+
+    .grid section li {
+      margin: 0.25rem 0;
+      font-size: 0.95rem;
+    }
+
+    .extras {
+      display: flex;
+      gap: 1.2rem;
+      margin-top: 1.2rem;
+      flex-wrap: wrap;
+    }
+
+    .extras a {
+      display: inline-block;
+      padding: 8px 18px;
+      background-color: #204e32;
+      color: #ceffe0;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      transition: background-color 0.2s;
+    }
+
+    .extras a:hover {
+      background-color: #0c1d12;
+    }
+
+    a:focus {
+      outline: 3px solid #07120b;
+      outline-offset: 2px;
+    }
+
+    footer {
+      margin-top: 3rem;
+      padding: 1.2rem 0 2rem;
+      border-top: 2px solid #3a8e5a;
+      font-size: 0.9rem;
+      text-align: center;
+    }
+
+    .nav-links {
+      display: flex;
+      justify-content: center;
+      gap: 0.6rem;
+      flex-wrap: wrap;
+    }
+
+    .nav-links a {
+      color: #204e32;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .nav-links a:hover {
+      text-decoration: underline;
+    }
+
+    .nav-links span {
+      color: #0c1d12;
+    }
+
+    @media (max-width: 600px) {
+      .grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Robert Elkjer</h1>
+    <p>Elkjer Music Publishing | 144 Bryce Canyon Road, San Rafael, CA 94903</p>
+  </header>
+
+  <main>
+
+    <div class="bio-intro">
+      <p>Robert Elkjer is a music composer, specializing in brass music and piano music.
+         He studied trumpet with Joseph Alessi Sr. and Eugene Blee (Cincinnati Conservatory),
+         and composition with William Thomas McKinley (New England Conservatory).
+         Mr. Elkjer resides in San Rafael, California.</p>
+    </div>
+
+    <div class="grid">
+
+      <section aria-labelledby="discog-heading">
+        <h2 id="discog-heading">Discography</h2>
+        <ul>
+          <li><strong>Slide Area</strong> — Joseph Alessi (Summit)</li>
+          <li><strong>New York Legends</strong> — Joseph Alessi (Cala)</li>
+          <li><strong>Trombonology</strong> — Mark Lawrence (Summit)</li>
+          <li><strong>On the Town</strong> — Center City BQ (Chandos)</li>
+          <li><strong>Weill: Berlin to Broadway</strong> — CCBQ (Chandos)</li>
+          <li><strong>Trombones Under the Tree</strong> (Summit)</li>
+          <li><strong>Trombonastics</strong> — Alessi (Summit)</li>
+          <li><strong>Clean Lines</strong> — Elkjer</li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="perf-heading">
+        <h2 id="perf-heading">Performances</h2>
+        <ul>
+          <li>Doc Severinsen</li>
+          <li>Joseph Alessi</li>
+          <li>Buddy Rich Orchestra</li>
+          <li>Summit Brass</li>
+          <li>The Bay Brass</li>
+          <li>Center City Brass Quintet</li>
+          <li>New York Philharmonic Brass Quintet</li>
+          <li>Four of a Kind</li>
+          <li>Boulder Brass</li>
+          <li>OFFUTT Brass of the USAF Heartland of America Band EsBrasso</li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="grants-heading">
+        <h2 id="grants-heading">Grants</h2>
+        <ul>
+          <li>Massachusetts Artists Foundation grant</li>
+          <li>NEA student composer grants (1980, 1982)</li>
+          <li>BMI composer award</li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="edu-heading">
+        <h2 id="edu-heading">Education</h2>
+        <ul>
+          <li>BA, Jazz Composition — New England Conservatory of Music</li>
+        </ul>
+      </section>
+
+    </div>
+
+    <div class="extras" role="list" aria-label="Additional pages">
+      <a href="http://robertelkjer.net/smallpoems.html" role="listitem">Small Poems</a>
+      <a href="http://robertelkjer.net/Gallery2.html" role="listitem">Gallery</a>
+      <a href="https://robertelkjer.net/YellowstoneTips.jpg" role="listitem">Travel Log</a>
+      <a href="http://robertelkjer.net/singing.html" role="listitem">Singing</a>
+    </div>
+
+  </main>
+
+  <footer>
+    <nav aria-label="Site navigation">
+      <div class="nav-links">
+        <a href="homepage.html">home</a><span>|</span>
+        <a href="http://robertelkjer.net/CDCatalogPage1.html">recordings</a><span>|</span>
+        <a href="sheetmusic.html">sheet music</a><span>|</span>
+        <a href="http://robertelkjer.net/CLMusicLicensing4.html">licensing</a><span>|</span>
+        <a href="Ebio.html">bio</a><span>|</span>
+        <a href="whistling.html">whistling</a><span>|</span>
+        <a href="http://whatsupwithbob.blogspot.com/">blog</a><span>|</span>
+        <a href="mailto:relkjer@att.net">contact</a>
+      </div>
+    </nav>
+  </footer>
+
+</body>
+</html>
