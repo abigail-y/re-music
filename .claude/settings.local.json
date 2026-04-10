@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(grep -rn 'src=\"[^h]' /c/Users/abiga/OneDrive/Desktop/Accessibility-Final/*.html)",
+      "Bash(mv /c/Users/abiga/OneDrive/Desktop/Accessibility-Final/*.jpg /c/Users/abiga/OneDrive/Desktop/Accessibility-Final/img/)",
+      "Bash(mv /c/Users/abiga/OneDrive/Desktop/Accessibility-Final/*.png /c/Users/abiga/OneDrive/Desktop/Accessibility-Final/img/)"
+    ]
+  }
+}
